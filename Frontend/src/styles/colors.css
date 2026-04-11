@@ -1,0 +1,46 @@
+@theme {
+  /* =====================================================================
+     TYPOGRAPHY
+     Base font family for the entire site.
+     ===================================================================== */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;  /* Inter — clean, modern, used site-wide */
+
+  /* =====================================================================
+     BRAND / PRIMARY
+     The main blue used for buttons, icons, highlights, and brand text.
+     ===================================================================== */
+  --color-brand: #1e40af;        /* Primary blue — CTA buttons, icons, "Get hired" text */
+  --color-brand-hover: #1d4ed8;  /* Slightly lighter blue — button hover state */
+  --color-brand-dark: #1e3a8a;   /* Darkest blue — logo "Me" accent in header */
+  --color-brand-light: #dbeafe;  /* Pale blue — icon circle backgrounds on feature cards */
+  --color-brand-mid: #3b82f6;    /* Mid blue — card border color on hover */
+
+  /* =====================================================================
+     BACKGROUNDS
+     Page and section background colors.
+     ===================================================================== */
+  --color-surface: #f9fafb;      /* Off-white — alternate section background (features section) */
+  --color-surface-dark: #111827; /* Near-black — dark page backgrounds (e.g. Signup page) */
+
+  /* =====================================================================
+     TEXT
+     All text shades used across the app.
+     ===================================================================== */
+  --color-heading: #111827;      /* Near-black — page headings and strong text */
+  --color-body: #4b5563;         /* Dark gray — body copy and descriptions */
+  --color-muted: #6b7280;        /* Medium gray — subtitles and placeholder text */
+
+  /* =====================================================================
+     BORDERS & SUBTLE SURFACES
+     Used for card outlines, input borders, and hover backgrounds.
+     ===================================================================== */
+  --color-border: #d1d5db;       /* Gray — button and input borders */
+  --color-subtle: #e5e7eb;       /* Lighter gray — card borders and hover backgrounds */
+
+  /* =====================================================================
+     FEEDBACK / STATE
+     Used for validation messages and interactive state indicators.
+     ===================================================================== */
+  --color-error: #dc2626;        /* Red — error and validation messages */
+  --color-success: #16a34a;      /* Green — success actions (e.g. signup button hover) */
+}

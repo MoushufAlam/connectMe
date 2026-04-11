@@ -15,7 +15,7 @@ export default function Signup() {
   const passwordsMatch = confirmPassword === "" || password === confirmPassword;
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900">
+    <div className="min-h-screen flex items-center justify-center bg-surface-dark">
       <form
         onSubmit={onSubmit}
         className="bg-white p-6 rounded-lg shadow-lg w-full max-w-sm space-y-4"
@@ -70,7 +70,7 @@ export default function Signup() {
             />
             <button
               type="button"
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-600"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-body"
               onClick={() => setShowPassword((s) => !s)}
             >
               {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
@@ -92,7 +92,7 @@ export default function Signup() {
             }
           />
           {!passwordsMatch && password !== "" && (
-            <span className="text-red-600 text-sm">Passwords do not match</span>
+            <span className="text-error text-sm">Passwords do not match</span>
           )}
         </div>
 
@@ -101,8 +101,8 @@ export default function Signup() {
           disabled={!passwordsMatch}
           className={`
             relative w-full p-2 rounded text-white font-medium overflow-hidden cursor-pointer
-          bg-gray-900
-            before:absolute before:inset-0 before:bg-green-600 before:-translate-x-full
+          bg-surface-dark
+            before:absolute before:inset-0 before:bg-success before:-translate-x-full
             hover:before:translate-x-0
             before:transition-transform before:duration-500
             hover:scale-102
