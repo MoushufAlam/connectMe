@@ -24,9 +24,12 @@ export default function PublicHeader() {
             connect<span className="text-brand-dark">Me</span>
           </span>
         </Link>
-        <div>
-          <Link to="/signup" className="text-black font-medium mx-2 p-3 hover:text-heading hover:bg-subtle hover:rounded-2xl hover:shadow-md transition-all duration-200">
-            Signup
+        <div className="flex items-center gap-3 mr-2">
+          <Link to="/login" className="text-sm font-medium text-heading hover:text-brand transition-colors duration-200 cursor-pointer">
+            Log in
+          </Link>
+          <Link to="/signup" className="border border-brand text-brand text-sm font-medium px-3 py-1.5 rounded-lg hover:bg-brand hover:text-white transition-all duration-200 cursor-pointer">
+            Sign up
           </Link>
         </div>
       </div>

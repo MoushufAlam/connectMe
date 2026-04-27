@@ -100,7 +100,7 @@ export default function Signup() {
               />
               <button
                 type="button"
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-muted"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-muted cursor-pointer"
                 onClick={() => setShowPassword((s) => !s)}
               >
                 {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
@@ -143,7 +143,7 @@ export default function Signup() {
           <button
             type="submit"
             disabled={!canSubmit}
-            className="w-full py-2 bg-brand text-white font-semibold rounded-lg hover:bg-brand-hover transition disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full py-2 bg-brand text-white font-semibold rounded-lg hover:bg-brand-hover transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Create Account
           </button>
